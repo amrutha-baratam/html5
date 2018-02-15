@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+<title>SUM OF NUMS</title>
+<script type="text/javascript">
+function addition()
+{
+var a =  parseInt(document.getElementById("input1").value);
+var b =  parseInt(document.getElementById("input2").value);
+var c = a+b;
+
+	if (c>=10){
+	document.writeln(c,"An Unlucky Number");}
+	else if(c<=9){
+	document.writeln(c,"Lucky Number");}
+	else{
+	document.writeln(c,"Array is Empty");}
+	
+}
+</script>
+</head>
+<body>
+<form >
+<p style='font-family:arial'><b>Javascript program to add two numbers</b> </p>
+<input type="number" id="input1" placeholder='enter 1st number' value='' ><br>
+<input type="number" id="input2" placeholder='enter 2nd number' value='' ><br>
+<input type="button" value="ADD" onclick="addition()">
+</form>
+</body>
+</html>
